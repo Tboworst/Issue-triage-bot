@@ -1,0 +1,21 @@
+# Issue-Triage Environment Variables
+# Fill in your tokens/secrets below
+
+# GitHub Configuration
+GITHUB_TOKEN=
+# GITHUB_APP_TOKEN=
+
+# Webhook Configuration
+GH_WEBHOOK_SECRET=
+
+# Flask Configuration
+SESSION_SECRET=
+FLASK_ENV=development
+
+# Database Configuration (optional)
+# Defaults to SQLite at ./triage_bot.db if not set
+# DATABASE_URL=postgresql+psycopg2://user:pass@host:5432/dbname
+
+# Stale Issue Configuration (optional)
+STALE_DAYS=14
+STALE_CLOSE_DAYS=30
