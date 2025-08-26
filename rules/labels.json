@@ -1,0 +1,55 @@
+{
+  "bug": [
+    "error",
+    "exception",
+    "crash",
+    "fail",
+    "broken",
+    "issue"
+  ],
+  "feature": [
+    "feature",
+    "enhancement",
+    "request",
+    "proposal",
+    "improve"
+  ],
+  "documentation": [
+    "docs",
+    "documentation",
+    "readme",
+    "guide",
+    "tutorial"
+  ],
+  "question": [
+    "question",
+    "help",
+    "how",
+    "why",
+    "what"
+  ],
+  "duplicate": [
+    "duplicate",
+    "same",
+    "already",
+    "exists"
+  ],
+  "wontfix": [
+    "wontfix",
+    "rejected",
+    "invalid"
+  ],
+  "performance": [
+    "slow",
+    "performance",
+    "speed",
+    "optimize",
+    "lag"
+  ],
+  "security": [
+    "security",
+    "vulnerability",
+    "exploit",
+    "attack"
+  ]
+}

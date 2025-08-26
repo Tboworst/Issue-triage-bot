@@ -1,0 +1,32 @@
+{
+  "src/api/": [
+    "api-team",
+    "backend-team"
+  ],
+  "src/web/": [
+    "frontend-team",
+    "ui-team"
+  ],
+  "src/mobile/": [
+    "mobile-team"
+  ],
+  "docs/": [
+    "docs-team",
+    "technical-writers"
+  ],
+  "test/": [
+    "qa-team",
+    "testing-team"
+  ],
+  "config/": [
+    "devops-team",
+    "infrastructure-team"
+  ],
+  "scripts/": [
+    "devops-team"
+  ],
+  "database/": [
+    "database-team",
+    "backend-team"
+  ]
+}

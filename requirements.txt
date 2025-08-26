@@ -1,0 +1,5 @@
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+PyGithub==1.59.1
+APScheduler==3.10.4
+python-dotenv==1.0.0
