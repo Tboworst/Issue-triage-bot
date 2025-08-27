@@ -4,12 +4,11 @@ A Flask application that automatically triages GitHub issues using webhooks, inc
 
 ## Features
 
-- 🔄 **Automatic Issue Labeling**: Labels issues based on keywords in title/body
-- 👥 **Owner Assignment**: Assigns owners based on file paths mentioned
-- 📝 **Checklist Comments**: Adds helpful checklists for issues with short descriptions
-- 💬 **Slash Commands**: Process commands like `/close`, `/area`, `/priority` in comments
-- ⏰ **Stale Issue Management**: Automatically marks and closes stale issues
-- 🔐 **Secure Webhooks**: Validates GitHub webhook signatures
+*Automatic Issue Labeling**: Labels issues based on keywords in title/body
+**Owner Assignment**: Assigns owners based on file paths mentioned
+**Checklist Comments**: Adds helpful checklists for issues with short descriptions
+**Slash Commands**: Process commands like `/close`, `/area`, `/priority` in comments**Stale Issue Management**: Automatically marks and closes stale issues
+**Secure Webhooks**: Validates GitHub webhook signatures
 
 ## Quick Setup
 
@@ -118,19 +117,7 @@ Edit `rules/labels.json` to customize automatic labeling:
 }
 ```
 
-### Owner Rules
 
-Edit `rules/owners.json` to customize owner assignment:
-
-```json
-{
-  "src/api/": ["api-team", "backend-team"],
-  "src/web/": ["frontend-team", "ui-team"],
-  "docs/": ["docs-team", "technical-writers"]
-}
-```
-
-## Development
 
 ### Project Structure
 
