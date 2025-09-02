@@ -85,18 +85,6 @@ The application will start on `http://localhost:5000`
 - **Short Issues**: Adds helpful checklist comments for issues with < 40 characters
 - **Activity Tracking**: Updates last activity when issues are modified
 
-### Slash Commands
-
-Users can use these commands in issue comments:
-
-| Command | Description | Example |
-|---------|-------------|---------|
-| `/close` | Close the issue | `/close` |
-| `/area <area>` | Add area label | `/area frontend` |
-| `/priority <level>` | Add priority label | `/priority high` |
-| `/size <size>` | Add size label | `/size m` |
-| `/assign <user>` | Assign user | `/assign @username` |
-
 ### Stale Issue Management
 
 - Issues are marked as stale after `STALE_DAYS` (default: 14 days)
@@ -115,30 +103,6 @@ Edit `rules/labels.json` to customize automatic labeling:
   "feature": ["feature", "enhancement", "request"],
   "documentation": ["docs", "documentation", "readme"]
 }
-```
-
-
-
-### Project Structure
-
-```
-Issue-Triage/
-├── app.py              # Flask application setup
-├── main.py             # Application entry point
-├── models.py           # Database models
-├── github_client.py    # GitHub API client
-├── rules_manager.py    # Label and owner rules
-├── security.py         # Webhook signature verification
-├── handlers/           # Event handlers
-│   ├── issues.py       # Issue event handling
-│   ├── comments.py     # Comment event handling
-│   └── stale.py        # Stale issue management
-├── routes/             # Flask routes
-│   └── webhook.py      # Webhook endpoint
-└── rules/              # Configuration files
-    ├── labels.json     # Label rules
-    └── owners.json     # Owner rules
-```
 
 ### Running in Development
 
@@ -151,14 +115,6 @@ pip install -r requirements.txt
 # Run with debug mode
 python main.py
 ```
-
-## Troubleshooting
-
-### Common Issues
-
-1. "Invalid webhook signature": Ensure `GH_WEBHOOK_SECRET` matches your GitHub webhook secret
-2. "GitHub client not initialized": Check that `GITHUB_TOKEN` is set correctly
-3. Database errors: Ensure the application has write permissions in the current directory
 
 ### Logs
 
