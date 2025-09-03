@@ -56,3 +56,4 @@ def get_webhook_secret():
     """Get webhook secret from environment"""
     import os
     return os.getenv("GH_WEBHOOK_SECRET", "")
+
