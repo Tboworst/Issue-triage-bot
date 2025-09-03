@@ -1,7 +1,7 @@
-from app import app, create_app
+from app import create_app
+# instance for the appo driver 
+app = create_app()
 
-# Initialize the application
-create_app()
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+if __name__ == "__main__":
+    # run the Flask dev server
+    app.run(host="0.0.0.0", port=5000, debug=True)
