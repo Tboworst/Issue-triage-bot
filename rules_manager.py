@@ -105,3 +105,4 @@ class RulesManager:
 
 # Global instance
 rules_manager = RulesManager()
+
